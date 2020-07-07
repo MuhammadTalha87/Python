@@ -1,9 +1,11 @@
-current_year = int(input("enter current year:  ")) 
-expiry_year = 2023
-remaining_time = expiry_year - current_year
-print(type(remaining_time))
+marks_in_percent = int(input("enter marks percentage achieved:  "))
 
-print (remaining_time  )
+if marks_in_percent >=50:
+    print("Student is passed")
+else: 
+    print("student is failed")
 
+#print(round(number))        #this function is used to round the value
 
+#print(abs(number))          #this function will always return the round value   
 
