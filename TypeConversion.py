@@ -23,9 +23,22 @@ print(msg)
 
 
 #This is type conversion code
-weight_pounds = int(input("Enter your weight in pounds : "))
-weight_kgs=weight_pounds*0.45
-print(weight_kgs)
+weight =float(input("Enter your weight  : "))
+unit = input("Pounds (L) or Kilograms (Kg)  ?")
+
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print("weight in Kg is "+ str(converted))
+
+elif unit.upper() == "KG":
+    convert = weight / 0.45
+    print("weight in pounds is "+ str(convert))
+
+else:
+    print("Please enter the right character")
+
+#weight_kgs=weight_pounds*0.45
+#print(weight_kgs)
 
 
 
