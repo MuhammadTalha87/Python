@@ -1,8 +1,9 @@
 class Dog:
     
+    #cosntructor
     def __init__(self,breed):
         self.breed = breed
-
+    #Method
     def bark(self):
         print("howwww bhowwww")
     
