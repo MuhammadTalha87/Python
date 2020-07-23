@@ -35,14 +35,19 @@ class Password:
         symbols = ch.special_characters()
 
         characters = [capital_letters, small_letters, numbers, symbols]
-        pass_length = int(input("What should be the length of password : ?"))
+        pass_length = range(int(input("What should be the length of password : ?")))
+        #if(pass_length >= 8):
         password = ""
-        for length in range(0, pass_length):
-            index1 = int (random.uniform(0,4)) #there are four lists capital, small, numbers and symbols
-            index2 = int(random.uniform(0, 26)) #every list has 26 characters
-            character = characters[index1][index2]
+        for length in pass_length:
+            range1 = int (random.uniform(0,4)) #there are four lists capital, small, numbers and symbols
+            range2 = int(random.uniform(0, 26)) #every list has 26 characters
+            character = characters[range1][range2]
             password += str(character)
         return password
+        
+        #else:
+        #    print("It should be greater than or equal to 8")
+        #    exit
 
 
 def _main():
