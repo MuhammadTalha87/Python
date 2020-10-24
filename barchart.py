@@ -12,3 +12,5 @@ pyp.bar(days, temp_night, color = "skyblue")
 
 pyp.legend(["Day", "Night"])
 pyp.show()
+
+print("Hello")
